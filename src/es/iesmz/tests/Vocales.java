@@ -6,7 +6,7 @@ public class Vocales {
 
     public static int contarVocales(String frase){
         int contador=0;
-        for(int i = 0; i == frase.length(); i++){
+        for(int i = 0; i < frase.length(); i++){
             String letra= String.valueOf(frase.charAt(i));
             if(letra.equalsIgnoreCase("A")){
                 contador++;
