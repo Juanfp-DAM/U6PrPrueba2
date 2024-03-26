@@ -34,4 +34,24 @@ class VocalesTest {
         assertEquals(7,contador);
     }
 
+    @org.junit.jupiter.api.Test
+    void contadorVocales4(){
+        //ARRANGE
+        String numeros="4h0r4 s0n num3r0s";
+        //ACT
+        int contador=Vocales.contarVocales(numeros);
+        //ASSERT
+        assertEquals(1,contador);
+    }
+
+    @org.junit.jupiter.api.Test
+    void contadorVocales5(){
+        //ARRANGE
+        String cadena="Cadena S1n Vocales";
+        //ACT
+        int contador=Vocales.contarVocales(cadena);
+        //ASSERT
+        assertEquals(6,contador);
+    }
+
 }
